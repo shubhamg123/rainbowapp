@@ -1,0 +1,81 @@
+* {
+    margin: 0px;
+    padding: 0px;
+      border: 0px;
+    }
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#north{
+    position: absolute;
+    top:0
+
+}
+#west{
+position: absolute;
+left:0;
+
+
+
+}
+#east{
+    position: absolute;
+right: 0;
+}
+#south{
+    
+    position: absolute;
+    bottom: 0;
+
+}
+#container{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: 85vh;
+    width: 90vw;
+    background-color: blueviolet;
+
+}
+#seasons{
+    z-index: 1;
+    position: absolute;
+    top: 10%;
+    left:25%;
+    color: azure;
+    background-color: rgb(13, 114, 114);
+}
+#daytime{
+    z-index: 2;
+    position: absolute;
+    top: 10%;
+   
+    color: azure;
+    background-color:rgb(13, 114, 114);
+}
+#time{z-index: 1;
+position: absolute;
+top: 10%;
+right:25%;
+color: azure;
+background-color: rgb(13, 114, 114);
+}
+
+#svg{
+   display: flex;
+    transform: rotate(0deg);
+}
+.svgcontainer{
+  display:flex;
+  align-items: center;
+ justify-content: center;
+ height: 200%;
+}
+.white{
+    box-shadow: -5px -5px 5px rgb(248, 242, 242);
+}
