@@ -1,59 +1,32 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Seasons and Time</title>
     <link rel="stylesheet" href="rainbow.css">
 </head>
 <body>
-    <span id="north">north</span>
-    <span id="west">west</span>
-    <span id="east">east</span>
-    <span id="south">south</span>
-    <select name="season" class="selecter" id="seasons" onchange="builderseason(this)">
-        <option value="summer">summer</option>
-        <option value="winter">winter</option>
-        <option value="spring">spring</option>
-      </select>
-      <select name="daytime" class="selecter" onchange="builderdaytime(this)"  id="daytime">
-        <option value="morning">morning</option>
-        <option value="noon">noon</option>
-        <option value="dusk">dusk</option>
-      </select>
-      <select name="time"  id="time" onchange="buildertime((this.options[this.selectedIndex].getAttribute('degree')))">
-        <option value="12oclock" degree="0">12'o clock</option>
-        <option value="3oclock" degree="90">3</option>
-        <option value="6oclock" degree="180">6</option>
-        <option value="9oclock" degree="270">9</option> 
-      </select>
-
-    <div id="container" >
-
-        <svg width="800" height="400" id="svg">
-       
-        <circle cx="400" cy="450" r="200" stroke="none"
-            stroke-width="2" fill="red" />
-  
-        <!-- r defines the radius of the circle  -->
-        <circle cx="400" cy="450" r="180" stroke="none" 
-            stroke-width="2" fill="yellow" />
-        <circle cx="400" cy="450" r="175" stroke="none" 
-            stroke-width="2" fill="orange" />
-        <circle cx="400" cy="450" r="150" stroke="none" 
-            stroke-width="2" fill="red" />
-        <circle cx="400" cy="450" r="125" stroke="none" 
-            stroke-width="2" fill="yellow" />
-        <circle cx="400" cy="450" r="100" stroke="none" 
-            stroke-width="2" fill="orange" />
-        <circle cx="400" cy="450" r="90" stroke="none" 
-            stroke-width="2" fill="red" />
-    </svg>
-        
-        
-     
+    <div class="controls">
+        <select name="season" id="seasons">
+            <option value="summer">Summer</option>
+            <option value="winter">Winter</option>
+            <option value="spring">Spring</option>
+        </select>
+        <select name="daytime" id="daytime">
+            <option value="morning">Morning</option>
+            <option value="noon">Noon</option>
+            <option value="dusk">Dusk</option>
+        </select>
+        <select name="time" id="time">
+            <option value="12oclock" degree="0">12'o clock</option>
+            <option value="3oclock" degree="90">3</option>
+            <option value="6oclock" degree="180">6</option>
+            <option value="9oclock" degree="270">9</option>
+        </select>
     </div>
-    <script src="rainbow.js"></script> 
-
+    <div id="container" class="svgcontainer"></div>
+    <script src="rainbow.js"></script>
 </body>
 </html>
